@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Alekseon sp. z o.o.
+ * http://www.alekseon.com/
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Alekseon_AlekseonEavSandbox::eav_sandbox"
+			 module="Alekseon_AlekseonEavSandbox"
+			 resource="Alekseon_AlekseonEavSandbox::eav_sandbox"
+			 sortOrder="500"
+			 title="Alekseon Eav Sandbox"
+			 translate="title"
+		/>
+		<add id="Alekseon_AlekseonEavSandbox::eav_sandbox_entities"
+			 action="alekseon_alekseonEavSandbox/entity/index"
+			 module="Alekseon_AlekseonEavSandbox"
+			 parent="Alekseon_AlekseonEavSandbox::eav_sandbox"
+			 resource="Alekseon_AlekseonEavSandbox::eav_sandbox"
+			 sortOrder="10"
+			 title="Entities"
+			 translate="title"
+		/>
+		<add id="Alekseon_AlekseonEavSandbox::eav_sandbox_attributes"
+			 action="alekseon_alekseonEavSandbox/attribute/index"
+			 title="Attributes"
+			 translate="title"
+			 module="Alekseon_AlekseonEavSandbox"
+			 parent="Alekseon_AlekseonEavSandbox::eav_sandbox"
+			 sortOrder="20"
+			 resource="Alekseon_AlekseonEavSandbox::eav_sandbox"
+		/>
+	</menu>
+</config>

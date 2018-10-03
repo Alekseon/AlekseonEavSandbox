@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Alekseon sp. z o.o.
+ * http://www.alekseon.com/
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <container name="form.wrapper" htmlTag="div" htmlClass="admin__scope-old">
+                <block class="Alekseon\AlekseonEavSandbox\Block\Adminhtml\Attribute" name="attributes_grid"/>
+            </container>
+        </referenceContainer>
+    </body>
+</page>
