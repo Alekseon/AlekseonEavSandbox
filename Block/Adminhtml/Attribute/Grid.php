@@ -32,6 +32,7 @@ class Grid extends EavGrid
         \Alekseon\AlekseonEavSandbox\Model\ResourceModel\Attribute\CollectionFactory $collectionFactory,
         array $data = []
     ) {
-        parent::__construct($context, $backendHelper, $yesNoSource, $scopesSource, $inputTypeSource, $collectionFactory, $data);
+        $this->collectionFactory = $collectionFactory;
+        parent::__construct($context, $backendHelper, $yesNoSource, $scopesSource, $inputTypeSource, $data);
     }
 }
